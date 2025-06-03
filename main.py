@@ -1,5 +1,6 @@
 print("Welcome to ArmorNet")
 import time
+from datetime import datetime
 import json
 from arpSpoofing_handle import restore_arp, blackList_machine, remove_from_blacklist
 from datetime import datetime
@@ -92,7 +93,7 @@ def packet_callback(packet):
                 "sport": tcp.sport,
                 "dastanation": packet_ip.dst,
                 "dport": tcp.dport,
-                "created": time.time()
+                "created": datetime.now().isoformat()
             })
             captured_flows.append((packet_ip.src, packet_ip.dst, tcp.sport, tcp.dport, tcp.seq, tcp.ack))
 
