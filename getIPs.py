@@ -36,7 +36,7 @@ def scan_network(subnet="192.168.56.0/24"):
     devices.sort(key=lambda x: x["response"])
 
     host_ip, host_mac = get_host_ip(devices)
-    devices.append({"ip":own_ip, "mac": own_mac})
+    # devices.append({"ip":own_ip, "mac": own_mac})
     devices.append({"ip":host_ip, "mac": host_mac})
 
     # print(f"[*] Scanning subnet {subnet}...")
