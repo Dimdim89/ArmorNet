@@ -8,6 +8,17 @@ def restore_arp(target_ip, target_mac, source_ip, source_mac):
 
 
 def blackList_machine(mac):
+        # Get current iptables rules
+        result = subprocess.run(
+            ["sudo", "iptables", "-L", "INPUT", "-v", "-n"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        if mac.lower() in result.stdout.lower():
+                print(f"[!] MAC {mac} is already blacklisted.")
+                return
+        
         subprocess.run(["sudo", "iptables", "-A", "INPUT", "-m", "mac", "--mac-source", mac, "-j", "DROP"])
         print(f"[!] Black listed MAC {mac} using iptables")
 

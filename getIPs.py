@@ -1,57 +1,62 @@
 from scapy.all import ARP, Ether, srp, arping
-import netifaces
-import time
-
-def get_own_ip(interface='eth0'):
-    try:
-        ip = netifaces.ifaddresses(interface)[netifaces.AF_INET][0]['addr']
-        mac = netifaces.ifaddresses(interface)[netifaces.AF_LINK][0]['addr']
-        return ip, mac
-    except (ValueError, KeyError):
-        return None
+import subprocess
+import re
     
 def get_host_ip(devices):
     for item in devices:
         if not item["mac"].lower().startswith("08:00:27"):
             devices.remove(item)
-            return item["ip"], item["mac"]
+            devices.append(item)
 
 
 def scan_network(subnet="192.168.56.0/24"):
-    own_ip, own_mac= get_own_ip()
     answered, _ = arping(subnet, timeout=2, verbose=False)
-
     devices = []
 
     for snd, rcv in answered:
         ip = rcv.psrc
-        mac = rcv.hwsrc
-    
+        mac = rcv.hwsrc   
         response_time = rcv.time - snd.sent_time
-        # if has_any_open_port(ip):
-        devices.append({"ip":ip, 
-                        "mac":mac,
-                        "response":response_time})
 
-    devices.sort(key=lambda x: x["response"])
+        #make a deep scan for each machine (nmap).
+        # find: OS, hostname, open ports 
+        try:
+            open_ports = []
+            services = []
+            result = subprocess.run(
+                ["nmap", "-O", "-sV", "--script=nbstat,smb-os-discovery", ip],
+                capture_output=True, text=True, timeout=60
+            )
+            output = result.stdout
+            get_os = re.search(r'OS details: (.+)', output) if re.search(r'OS details: (.+)', output) else re.search(r'OS CPE: (.+)', output)
+            os = get_os.group(1) if get_os != None else "Unknown" 
+            get_hostname = re.search(r'NetBIOS name:\s+([^,\n\r]+)', output) if re.search(r'NetBIOS name:\s+([^\n\r]+)', output) else re.search(r'hostname:\s+([^,\n\r]+)', output)                                   
+            hostname = get_hostname.group(1) if get_hostname != None else "None"
+            get_device_type = re.search(r'Device type: (.+)', output)
+            device_type = get_device_type.group(1) if get_device_type != None else "None"
+            port_lines = re.findall(r'(\d+/tcp)\s+open\s+(\S+)\s+(.*)', output)
 
-    host_ip, host_mac = get_host_ip(devices)
-    # devices.append({"ip":own_ip, "mac": own_mac})
-    devices.append({"ip":host_ip, "mac": host_mac})
+            for port, service, version in port_lines:
+                open_ports.append(port)
+                services.append({
+                    "port": port,
+                    "service": service,
+                    "version": version.strip()
+                })
 
-    # print(f"[*] Scanning subnet {subnet}...")
-    # arp = ARP(pdst=subnet)
-    # ether = Ether(dst="ff:ff:ff:ff:ff:ff")
-    # packet = ether / arp
+            devices.append({"ip":ip, 
+                            "mac":mac,
+                            "name":hostname,
+                            "OS": os,
+                            "type": device_type,
+                            "open_ports": open_ports,
+                            "sefvices": services,
+                            "response":response_time})
+        
+        except Exception as e:
+            print(f"Error scanning {ip}: {e}")
 
-    # result = srp(packet, timeout=2, verbose=False)[0]
-
-    # devices = []
-    # devices.append({"ip":own_ip, "mac":own_mac})
-    # for sent, received in result:
-    #     # if received.psrc != own_ip:
-    #     devices.append({"ip":received.psrc,
-    #                     "mac": received.hwsrc})
+    get_host_ip(devices)
 
     print(f"[+] Found {len(devices)} devices.")
     return devices
