@@ -10,7 +10,7 @@ def send_data_to_api():
             data = json.load(f)
 
             response = requests.post (
-                "http://13.61.177.249:8001/boot",
+                "enter address here",
                 json=data
             )
             print(f"Status code: {response.status_code}")

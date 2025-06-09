@@ -7,7 +7,7 @@ from datetime import datetime
 from shutdown import shutdown_connection
 from getIPs import scan_network
 from api_comm import send_data_to_api
-from scapy.all import sniff, wrpcap, IP, TCP, ARP
+from scapy.all import sniff, wrpcap, IP, TCP, ARP, DHCP, BOOTP, IP
 import threading
 
 iface = "eth0"
@@ -134,7 +134,7 @@ def packet_callback(packet):
                         })
 
                         del captured_flows[flow_key]
-
+               
     elif packet.haslayer(ARP) and packet[ARP].op == 2:      #ARP Detection
         ip_check = packet[ARP].psrc
         mac_check = packet[ARP].hwsrc
@@ -159,12 +159,8 @@ def packet_callback(packet):
                     restore_arp(host, host_mac, ip_check, device["mac"])            #restore the correct ip and macs
                     
                     blackList_machine(mac_check)                                    #black list the attacker
-                    # print(f"{mac_check} was blacklisted!!")
-                    # log_data["alerts"].append({
-                    #     "type": "Black listed machine",
-                    #     "mac": mac_check,
-                    #     "created": datetime.now().isoformat()
-                    # })
+                    print(f"{mac_check} was blacklisted!!")
+
                     # #remove from blacklist
                     # remove_from_blacklist(mac)
     else:                                                                           #Record any "undefiend metadata"   
@@ -192,11 +188,9 @@ def sniff_thread(target_ip):
     print(f"[*] Sniffing on {iface} for up to {max_packets} packets or {max_time} seconds...")
     packets = sniff(
         iface = iface, 
-        # filter = f"(arp or ip) and host {host} and host {target_ip}",
         filter = f"(arp or ip) and ((src host {host} and dst host {target_ip}) or (src host {target_ip} and dst host {host}))",
         prn=packet_callback, 
         store=True,
-        # stop_filter=lambda x: should_stop()
     )
 
 
@@ -213,10 +207,10 @@ try:
     for t in threads:
         t.join()
 except:
-    # for asset in pcap_files:
-    #     wrpcap(f"capture_{asset}.pcap", pcap_files[asset])
-    # save_json()
-    # send_data_to_api()
+    for asset in pcap_files:
+        wrpcap(f"capture_{asset}.pcap", pcap_files[asset])
+    save_json()
+    send_data_to_api()
     print("FINISHED!")
 
 
