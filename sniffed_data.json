@@ -14,1232 +14,4139 @@
             "asset-id": "as-1",
             "ip": "192.168.56.102",
             "mac": "08:00:27:cc:1e:2a",
-            "os": "Linux/macOS",
-            "packets": 63,
+            "name": "None",
+            "os": "Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)",
+            "type": "general purpose|router",
             "pcap_file": "192.168.56.102.pcap"
         },
         {
             "asset-id": "as-2",
             "ip": "192.168.56.1",
             "mac": "0a:00:27:00:00:08",
-            "os": "Windows",
-            "packets": 61,
+            "name": "DIMABROPC",
+            "os": "cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2019",
+            "type": "general purpose",
             "pcap_file": "192.168.56.1.pcap"
         },
         {
             "asset-id": "as-3",
             "ip": "192.168.56.103",
             "mac": "08:00:27:fc:59:7b",
-            "os": "Linux/macOS",
-            "packets": 3,
+            "name": "None",
+            "os": "Unknown",
+            "type": "None",
             "pcap_file": "192.168.56.103.pcap"
         }
     ],
     "metadata": [
         {
-            "meta-id": "as-1",
+            "asset-id": "as-1",
+            "meta-id": "mt-1",
             "meta-name": "nm-10",
             "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
+            "packets": 326,
+            "open ports": [
+                "22/tcp"
+            ],
+            "services": [
+                {
+                    "port": "22/tcp",
+                    "service": "ssh",
+                    "version": "OpenSSH 9.9p1 Debian 3 (protocol 2.0)"
+                }
+            ]
+        },
+        {
+            "asset-id": "as-1",
+            "meta-id": "as-2",
+            "meta-name": "nm-11",
+            "ip": "192.168.56.102",
             "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
-            "meta-id": "as-2",
-            "meta-name": "nm-11",
-            "ip": "Unknown",
-            "mac": "0a:00:27:00:00:08",
+            "asset-id": "None",
+            "meta-id": "as-3",
+            "meta-name": "nm-12",
+            "ip": "None",
             "desc": "Ether / ARP who has 192.168.56.102 says 192.168.56.1 / Padding"
         },
         {
-            "meta-id": "as-3",
-            "meta-name": "nm-12",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
-        },
-        {
-            "meta-id": "as-4",
+            "asset-id": "as-2",
+            "meta-id": "mt-4",
             "meta-name": "nm-13",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+            "ip": "192.168.56.1",
+            "packets": 323,
+            "open ports": [
+                "135/tcp",
+                "139/tcp",
+                "445/tcp"
+            ],
+            "services": [
+                {
+                    "port": "135/tcp",
+                    "service": "msrpc",
+                    "version": "Microsoft Windows RPC"
+                },
+                {
+                    "port": "139/tcp",
+                    "service": "netbios-ssn",
+                    "version": "Microsoft Windows netbios-ssn"
+                },
+                {
+                    "port": "445/tcp",
+                    "service": "microsoft-ds?",
+                    "version": "MAC Address: 0A:00:27:00:00:08 (Unknown)"
+                }
+            ]
         },
         {
+            "asset-id": "as-2",
             "meta-id": "as-5",
             "meta-name": "nm-14",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
             "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
+            "asset-id": "None",
             "meta-id": "as-6",
             "meta-name": "nm-15",
             "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
             "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
+            "asset-id": "as-2",
             "meta-id": "as-7",
             "meta-name": "nm-16",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
             "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
+            "asset-id": "None",
             "meta-id": "as-8",
             "meta-name": "nm-17",
             "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
             "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
+            "asset-id": "as-2",
             "meta-id": "as-9",
             "meta-name": "nm-18",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
             "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
+            "asset-id": "None",
             "meta-id": "as-10",
             "meta-name": "nm-19",
-            "ip": "Unknown",
-            "mac": "08:00:27:cc:1e:2a",
+            "ip": "None",
             "desc": "Ether / ARP who has 192.168.56.1 says 192.168.56.102 / Padding"
         },
         {
+            "asset-id": "None",
             "meta-id": "as-11",
             "meta-name": "nm-20",
+            "ip": "None",
+            "desc": "Ether / ARP who has 192.168.56.1 says 192.168.56.103 / Padding"
+        },
+        {
+            "asset-id": "as-3",
+            "meta-id": "mt-12",
+            "meta-name": "nm-21",
             "ip": "192.168.56.103",
-            "mac": "08:00:27:fc:59:7b",
+            "packets": 3,
+            "open ports": [],
+            "services": []
+        },
+        {
+            "asset-id": "as-3",
+            "meta-id": "as-13",
+            "meta-name": "nm-22",
+            "ip": "192.168.56.103",
             "desc": "Ether / IP / ICMP 192.168.56.103 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
-            "meta-id": "as-12",
-            "meta-name": "nm-21",
-            "ip": "Unknown",
-            "mac": "0a:00:27:00:00:08",
+            "asset-id": "None",
+            "meta-id": "as-14",
+            "meta-name": "nm-23",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "as-3",
+            "meta-id": "as-15",
+            "meta-name": "nm-24",
+            "ip": "192.168.56.103",
+            "desc": "Ether / IP / ICMP 192.168.56.103 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-16",
+            "meta-name": "nm-25",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "as-3",
+            "meta-id": "as-17",
+            "meta-name": "nm-26",
+            "ip": "192.168.56.103",
+            "desc": "Ether / IP / ICMP 192.168.56.103 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-18",
+            "meta-name": "nm-27",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-19",
+            "meta-name": "nm-28",
+            "ip": "None",
             "desc": "Ether / ARP who has 192.168.56.103 says 192.168.56.1 / Padding"
         },
         {
-            "meta-id": "as-13",
-            "meta-name": "nm-22",
+            "asset-id": "None",
+            "meta-id": "as-20",
+            "meta-name": "nm-29",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-21",
+            "meta-name": "nm-30",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
-            "meta-id": "as-14",
-            "meta-name": "nm-23",
-            "ip": "192.168.56.103",
-            "mac": "08:00:27:fc:59:7b",
-            "desc": "Ether / IP / ICMP 192.168.56.103 > 192.168.56.1 echo-request 0 / Raw"
+            "asset-id": "None",
+            "meta-id": "as-22",
+            "meta-name": "nm-31",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
-            "meta-id": "as-15",
-            "meta-name": "nm-24",
+            "asset-id": "None",
+            "meta-id": "as-23",
+            "meta-name": "nm-32",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
-            "meta-id": "as-16",
-            "meta-name": "nm-25",
-            "ip": "192.168.56.103",
-            "mac": "08:00:27:fc:59:7b",
-            "desc": "Ether / IP / ICMP 192.168.56.103 > 192.168.56.1 echo-request 0 / Raw"
+            "asset-id": "None",
+            "meta-id": "as-24",
+            "meta-name": "nm-33",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
         },
         {
-            "meta-id": "as-17",
-            "meta-name": "nm-26",
+            "asset-id": "None",
+            "meta-id": "as-25",
+            "meta-name": "nm-34",
             "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.103 echo-reply 0 / Raw"
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         },
         {
-            "meta-id": "as-18",
-            "meta-name": "nm-27",
-            "ip": "Unknown",
-            "mac": "08:00:27:fc:59:7b",
-            "desc": "Ether / ARP who has 192.168.56.1 says 192.168.56.103 / Padding"
+            "asset-id": "None",
+            "meta-id": "as-26",
+            "meta-name": "nm-35",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-27",
+            "meta-name": "nm-36",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-28",
+            "meta-name": "nm-37",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-29",
+            "meta-name": "nm-38",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-30",
+            "meta-name": "nm-39",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-31",
+            "meta-name": "nm-40",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-32",
+            "meta-name": "nm-41",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-33",
+            "meta-name": "nm-42",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-34",
+            "meta-name": "nm-43",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-35",
+            "meta-name": "nm-44",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-36",
+            "meta-name": "nm-45",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-37",
+            "meta-name": "nm-46",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-38",
+            "meta-name": "nm-47",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-39",
+            "meta-name": "nm-48",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-40",
+            "meta-name": "nm-49",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-41",
+            "meta-name": "nm-50",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-42",
+            "meta-name": "nm-51",
+            "ip": "192.168.56.102",
+            "desc": "Ether / IP / ICMP 192.168.56.102 > 192.168.56.1 echo-request 0 / Raw"
+        },
+        {
+            "asset-id": "None",
+            "meta-id": "as-43",
+            "meta-name": "nm-52",
+            "ip": "192.168.56.1",
+            "desc": "Ether / IP / ICMP 192.168.56.1 > 192.168.56.102 echo-reply 0 / Raw"
         }
     ],
     "alerts": [
         {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5328662
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.533289
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5336738
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5363424
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.5371516
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.547721
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5521946
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.5538192
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5546253
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.5569758
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.5611212
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.6026955
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.6030602
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.6037116
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.6040742
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.604398
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990247.6047242
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990247.6457012
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990250.830927
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990250.8725896
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990250.888826
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990250.894817
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990250.8957016
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990250.9583385
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990250.9991796
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.001547
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990251.003176
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.004756
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.0075705
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.008397
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990251.0186574
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.1187067
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.1388931
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990251.1402261
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990251.14149
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990251.1796474
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.0983708
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1005642
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1039076
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.1042593
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1049533
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.118743
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1203365
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.1402316
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1410618
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.1744268
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.1751292
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.2037115
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.2043405
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.2368019
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.2371871
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.2668087
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.2680066
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.300053
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.300731
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.328941
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.3313587
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.3329268
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.3338635
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.3601058
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.362928
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.391718
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.3928697
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.4265444
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.4284356
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.4523282
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.453164
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.484349
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.4867315
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.5149643
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.515339
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.5369296
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.53874
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.5412016
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.5421653
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.5588675
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.5603511
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.581048
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.582334
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.613124
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.615588
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.6529768
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.6533594
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.6697335
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.6700852
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.7027056
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7039483
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.7330527
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7352505
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.7666018
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7679298
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.7893531
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7904477
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7908294
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.791147
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.7914765
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.8137105
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.8161077
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.8486009
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.8491867
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.8773274
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.880438
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.9047217
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.9075909
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.9110525
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.9129846
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.9141204
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.9155073
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.917838
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.102",
-            "mac": "08:00:27:cc:1e:2a",
-            "sport": 22,
-            "dastanation": "192.168.56.1",
-            "dport": 64883,
-            "created": 1748990252.9213643
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.9236784
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.9273446
-        },
-        {
-            "type": "TCP protocol",
-            "ip": "192.168.56.1",
-            "mac": "0a:00:27:00:00:08",
-            "sport": 64883,
-            "dastanation": "192.168.56.102",
-            "dport": 22,
-            "created": 1748990252.9293802
-        },
-        {
-            "type": "ARP spoofing",
+            "alert_name": "ARP spoofing",
             "ip": "192.168.56.103",
             "original mac": "08:00:27:fc:59:7b",
             "spoofed mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:40.403831"
+            "mitre_tactic": "Credential Access, Collection",
+            "mitre_technique": "(T1557) Adversary-in-the-Middle: ARP Cache Poisoning",
+            "severity": 5,
+            "created": "2025-06-09T12:25:37.138822"
         },
         {
-            "type": "Black listed machine",
-            "mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:40.679981"
-        },
-        {
-            "type": "ARP spoofing",
+            "alert_name": "ARP spoofing",
             "ip": "192.168.56.103",
             "original mac": "08:00:27:fc:59:7b",
             "spoofed mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:42.404444"
+            "mitre_tactic": "Credential Access, Collection",
+            "mitre_technique": "(T1557) Adversary-in-the-Middle: ARP Cache Poisoning",
+            "severity": 5,
+            "created": "2025-06-09T12:25:39.149752"
         },
         {
-            "type": "Black listed machine",
-            "mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:42.476077"
-        },
-        {
-            "type": "ARP spoofing",
+            "alert_name": "ARP spoofing",
             "ip": "192.168.56.103",
             "original mac": "08:00:27:fc:59:7b",
             "spoofed mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:44.404890"
+            "mitre_tactic": "Credential Access, Collection",
+            "mitre_technique": "(T1557) Adversary-in-the-Middle: ARP Cache Poisoning",
+            "severity": 5,
+            "created": "2025-06-09T12:25:41.146472"
         },
         {
-            "type": "Black listed machine",
-            "mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:44.472258"
-        },
-        {
-            "type": "ARP spoofing",
+            "alert_name": "ARP spoofing",
             "ip": "192.168.56.103",
             "original mac": "08:00:27:fc:59:7b",
             "spoofed mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:46.405255"
+            "mitre_tactic": "Credential Access, Collection",
+            "mitre_technique": "(T1557) Adversary-in-the-Middle: ARP Cache Poisoning",
+            "severity": 5,
+            "created": "2025-06-09T12:25:43.154734"
         },
         {
-            "type": "Black listed machine",
-            "mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:46.481724"
-        },
-        {
-            "type": "ARP spoofing",
+            "alert_name": "ARP spoofing",
             "ip": "192.168.56.103",
             "original mac": "08:00:27:fc:59:7b",
             "spoofed mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:48.405034"
+            "mitre_tactic": "Credential Access, Collection",
+            "mitre_technique": "(T1557) Adversary-in-the-Middle: ARP Cache Poisoning",
+            "severity": 5,
+            "created": "2025-06-09T12:25:45.154616"
+        },      
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.942171"
         },
         {
-            "type": "Black listed machine",
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
             "mac": "08:00:27:cc:1e:2a",
-            "created": "2025-06-03T18:37:48.480211"
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.943169"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.965785"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.976184"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.981706"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:09.992203"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.001739"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.007369"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.027703"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.032277"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.059424"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.063865"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.094841"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.098233"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.103073"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.111746"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.114894"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.119987"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.123669"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.126721"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.135208"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.136433"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.176026"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.178952"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.197875"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.198630"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.233112"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.237452"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.261140"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.266077"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.290553"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.295031"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.322677"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.324563"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.352115"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.354528"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.384575"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.385183"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.416404"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.418695"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.446638"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.447208"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.476829"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.478313"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.509438"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.511793"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.540935"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.542122"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.573620"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.578460"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.606934"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.607948"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.640134"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.641087"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.668235"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.677593"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.710884"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.721462"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.732672"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.742467"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.760925"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.764691"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.800217"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.805294"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.823266"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.826383"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.855579"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.856529"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.887017"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.915536"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.917205"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.917572"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.947373"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.947912"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.980342"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:10.981008"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.008922"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.009627"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.038969"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.039412"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.073778"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.074278"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.101310"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.103647"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.132613"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.134381"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.164416"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.166860"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.195513"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.196656"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.230088"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.231540"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.263372"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.266511"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.290644"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.299201"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.320204"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.320900"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.352938"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.363055"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.386087"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.391920"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.420092"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.426880"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.449289"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.456217"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.478452"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.483053"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.509155"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.511479"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.539491"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.540711"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.573300"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.574099"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.603188"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.603944"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.634637"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.639408"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.664660"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.665718"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.697213"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.699910"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.727235"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.727599"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.763825"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.768021"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.789489"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.791539"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.829985"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.834968"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.852447"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.856232"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.885044"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.885498"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.917046"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.919300"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.950680"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.954255"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.986854"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:11.994752"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.008091"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.010019"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.041440"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.045631"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.072660"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.074815"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.105302"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.110075"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.137406"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.143747"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.164417"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.166240"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.166718"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.167534"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.169522"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.174997"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.177323"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.184165"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.184807"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.217118"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.218557"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.247171"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.251414"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.275890"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.277463"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.305616"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.307494"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.335557"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.336505"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.375210"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.375863"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.403336"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.404638"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.435724"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.442585"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.460944"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.461391"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.494538"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.495027"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.526902"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.528345"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.557563"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.561853"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.587684"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.588731"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.617573"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.620856"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.653116"
+        },
+        {
+            "alert_name": "SSH suspicious usage",
+            "ip": "192.168.56.1",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "mitre_tactic": "Persistence, Privilege Escalation",
+            "mitre_technique": "(T1098.004) Account Manipulation: SSH Authorized Keys",
+            "severity": 4,
+            "created": "2025-06-09T12:26:12.808043"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.812824"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.818743"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.823639"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.828687"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.833375"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "08:00:27:04:42:0f",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.839766"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.840786"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.841631"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.842408"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.843172"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:04:42:0f",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.843794"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.844603"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.845393"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.846253"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.847411"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.873058"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.874001"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.901418"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.907068"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.934541"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.942687"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.963961"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.965636"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.995108"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:12.995561"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.028584"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.033775"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.055124"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.056489"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.086042"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.087918"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.119177"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.119817"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.152020"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.152730"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.181048"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.184912"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.185533"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.187082"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.197928"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.198248"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.227746"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.228438"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.259998"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.260541"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.289324"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.290831"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.331470"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.334633"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.353117"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.365618"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.385093"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.386725"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.419485"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.420979"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.457603"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.458713"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.484059"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.487425"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.512715"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.514427"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.540855"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.544104"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.573002"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.575011"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.604533"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.606693"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.638977"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.641592"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.670285"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.684284"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.701334"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.708462"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.731824"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.732890"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.770783"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.777311"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.804193"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.811155"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.831396"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.834925"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.864128"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.868213"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.896388"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.902708"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.932735"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.936816"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.950844"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.956365"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.978384"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:13.980323"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.007346"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.007692"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.038487"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.040539"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.071358"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.072651"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.105190"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.106711"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.133847"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.134969"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.163095"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.163432"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.193754"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.194087"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.195438"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.196300"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.214115"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.215496"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.242212"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.242890"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.278677"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.279907"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.307915"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.311696"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.340844"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.341321"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.366396"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.366905"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.413734"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.416527"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.435207"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.436136"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.468260"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.469115"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.510573"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.517846"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.538883"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.545045"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.558170"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.560169"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.590246"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.596478"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.621299"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.623280"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.661129"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.664739"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.694870"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.697421"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.729082"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.731424"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.751806"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.756298"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.777007"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.779749"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.807527"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.818256"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.844636"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.849467"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.869336"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.871701"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.908246"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.913744"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.938702"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.944961"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.972858"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:14.981858"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:15.003734"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:15.010244"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:15.042793"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:15.335014"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:15.337659"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:16.226264"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:16.266241"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:17.232851"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:17.279845"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:18.248695"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:18.293850"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:19.255962"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:19.295772"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:20.247640"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:20.300970"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:21.263230"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:21.296814"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:22.260807"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:22.303487"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:23.257363"
+        },
+        {
+            "alert_name": "SSH suspicious usage",
+            "ip": "192.168.56.102",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "mitre_tactic": "Persistence, Privilege Escalation",
+            "mitre_technique": "(T1098.004) Account Manipulation: SSH Authorized Keys",
+            "severity": 4,
+            "created": "2025-06-09T12:26:23.522379"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:23.525943"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:04:42:0f",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:23.528389"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "08:00:27:04:42:0f",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:23.530417"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.1",
+            "mac": "0a:00:27:00:00:08",
+            "sport": 54454,
+            "destination": "192.168.56.102",
+            "dport": 22,
+            "severity": 2,
+            "created": "2025-06-09T12:26:29.796389"
+        },
+        {
+            "alert_name": "TCP protocol",
+            "ip": "192.168.56.102",
+            "mac": "08:00:27:cc:1e:2a",
+            "sport": 22,
+            "destination": "192.168.56.1",
+            "dport": 54454,
+            "severity": 2,
+            "created": "2025-06-09T12:26:29.806010"
         }
     ]
 }
