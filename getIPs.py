@@ -1,4 +1,4 @@
-from scapy.all import ARP, Ether, srp, arping
+from scapy.all import ARP, Ether, srp, arping, get_if_addr, get_working_if
 import subprocess
 import re
     
@@ -9,7 +9,12 @@ def get_host_ip(devices):
             devices.append(item)
 
 
-def scan_network(subnet="192.168.56.0/24"):
+def scan_network(subnet=None):
+    if subnet is None:
+        # Get the current working interface
+        interface = get_working_if()
+        # Get the IP address of the current interface
+        subnet = get_if_addr(interface)+ "/24"
     answered, _ = arping(subnet, timeout=2, verbose=False)
     devices = []
 
