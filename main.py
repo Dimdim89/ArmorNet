@@ -159,7 +159,6 @@ def packet_callback(packet):
                     restore_arp(host, host_mac, ip_check, device["mac"])            #restore the correct ip and macs
                     
                     blackList_machine(mac_check)                                    #black list the attacker
-                    print(f"{mac_check} was blacklisted!!")
 
                     # #remove from blacklist
                     # remove_from_blacklist(mac)
